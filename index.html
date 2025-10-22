@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <strong>AS A Student Web Developer, I Made this Website To Help Me and Other Students who fear Maths,Make it Interesting.</strong>
+    <h1>Question Tracker</h1>
+    <div id="userSelection">
+        <label for="username">Enter your username:</label>
+        <input id="username" type="text" placeholder="Username">
+        <button id="setUser">Set User</button>
+    </div>
+    <div id="main" style="display: none;">
+        <h2>Welcome, <span id="currentUser"></span></h2>
+        <button id="changeUser">Change User</button>
+        <button id="logQuestion">Log a Question Done</button>
+        <h3>Daily Progress: <span id="daily"></span> questions today</h3>
+        <h3>Progress Chart</h3>
+        <div id="chartControls">
+            <button id="showDaily">Daily</button>
+            <button id="showWeekly">Weekly</button>
+            <button id="showMonthly">Monthly</button>
+        </div>
+        <div id="chartContainer">
+            <canvas id="progressChart"></canvas>
+        </div>
+        <h3>Weekly Progress</h3>
+        <div id="weekly"></div>
+        <h3>Monthly Progress</h3>
+        <div id="monthly"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
